@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jayvee Rejesus - Portfolio</title>
+</head>
+<body>
+
+    
+    <header>
+        <div class="top-nav">
+            <img src="https://github.com/ItsYahBoiJay/Logo/blob/main/Mon_19_02_2024_23_29_35.png?raw=true" alt="Logo" onclick="goHome()" class="logo">
+        </div>
+        <div class="top-right">
+            <a href="javascript:void(0);" onclick="showSection('about-me')">About Me</a>
+            <a href="javascript:void(0);" onclick="showSection('my-works')">My Works</a>
+            <a href="javascript:void(0);" onclick="showSection('social-media')">Social Media</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <div class="content">
+            <section id="about-me" class="about section">
+                <h2>About Me</h2>
+                <p>Hi, I'm Jayvee Rejesus. I am a passionate individual who loves playing PC games and embraces college life through various activities. My interests include editing gaming clips and sharing my experiences on my YouTube channel, which you can find under my portfolio.</p>
+                <p>Age: 20</p>
+                <p>Hobbies: </p>
+                <p>Playing PC games, video editing, and exploring new technologies.</p>
+                <p>Interests:
+                <p> My interests include editing gaming clips and sharing my experiences on my YouTube channel, which you can find under my portfolio.</p>
+            </section>
+        </section>
+
+        <section id="my-works" class="works section">
+            <h2>My Works</h2>
+            <p>As of now i dont have any works</p>
+        </section>
+
+        <section id="social-media" class="social-media section">
+            <ul>
+                <li><a href="https://www.facebook.com/majorgamer23/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/itsyahboijay/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UCY8h1Dm7wrwK1KcPDjaPtYg" target="_blank">YouTube</a></li>
+            </ul>
+        </section>
+
+        <section id="home" class="section">
+            <div class="profile-picture">
+                <img src="https://github.com/ItsYahBoiJay/PicHome/blob/main/1708351645976.png?raw=true" alt="Profile Picture">
+            </div>
+        </section>
+    </div>
+
+    <section id="social-media-bottom" class="social-media-bottom">
+        <ul>
+            <li><a href="https://www.facebook.com/majorgamer23/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/itsyahboijay/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/channel/UCY8h1Dm7wrwK1KcPDjaPtYg" target="_blank">YouTube</a></li>
+        </ul>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        function toggleMenu() {
+            var topNav = document.querySelector('.top-nav');
+            topNav.classList.toggle('active');
+        }
+
+        function goHome() {
+            showSection('home');
+        }
+    </script>
+
+</body>
+</html>

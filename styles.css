@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Your Fancy Font', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('https://raw.githubusercontent.com/ItsYahBoiJay/Background/main/BG.jpg') no-repeat left top fixed;
+    background-size: cover;
+    color: rgb(255, 0, 0);
+    overflow: hidden; 
+}
+
+header {
+    position: relative;
+    transition: background-color 3s ease; 
+}
+
+img {
+    border-radius: 0; 
+    transition: border-radius 3s ease; 
+}
+
+.content {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    max-width: px;
+    border-radius: 10px;
+    text-align: left; 
+    margin-top: 20px;
+    margin-right: 100px;
+    z-index: 0; 
+    margin: auto;
+    transition: all 3s ease, margin-right 3s ease; 
+}
+
+h2, p {
+    color: rgb(255, 0, 200);
+    width: 1000px;
+    transition: color 3s ease; 
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+}
+
+.section {
+    margin-top: 50px;
+    transition: margin-top 3s ease; 
+}
+
+.profile-picture img {
+    width: 100%;
+    transition: width 3s ease;
+}
+
+.social-media-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 10px; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin: auto;
+    transition: background-color 3s ease; 
+}
+
+.top-nav {
+    padding: 20px; 
+}
+
+.content {
+    margin-top: 10px; 
+    transition: margin-top 3s ease; 
+}
+
+.section {
+    display: none;
+    transition: display 3s ease;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    z-index: 1000;
+    transition: background-color 3s ease;
+}
+
+.top-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    cursor: pointer;
+    src: url('https://github.com/ItsYahBoiJay/Logo/blob/main/Mon_19_02_2024_23_29_35.png?raw=true');
+    width: 100px;
+    height: 100px; 
+    transition: width 3s ease, height 3s ease;
+}
+
+.top-right {
+    position: absolute;
+    top: 30px;
+    right: 30px; 
+    transition: top 3s ease, right 3s ease; 
+}
